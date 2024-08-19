@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Website for GA4 Demo</title>
+    <!-- Paste your GA4 code here -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR-MEASUREMENT-ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'YOUR-MEASUREMENT-ID');
+    </script>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; }
+        header { background: #f4f4f4; padding: 1rem; }
+        nav { margin-bottom: 20px; }
+        nav a { margin-right: 10px; }
+        .content { max-width: 800px; margin: auto; }
+        footer { margin-top: 20px; text-align: center; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Sample Website</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="content">
+        <h2>Home Page</h2>
+        <p>This is a sample website for demonstrating Google Analytics 4 integration.</p>
+        <button onclick="gtag('event', 'click_button', {'button_name': 'sample_button'})">Sample Button</button>
+    </div>
+    <footer>
+        <p>&copy; 2024 Sample Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>
